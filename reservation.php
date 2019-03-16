@@ -6,7 +6,7 @@
 <section class="main-container"> 
 	<div class="main-wrapper">
     
-		<h2>Онлайн Резервация</h2>"
+		<h2>Онлайн Резервация За Хотел</h2>"
 				<form class="signup-form" action="includes/reservation.inc.php" method="POST">
 			<input type="text" name="first" placeholder="Първото ви име">
 			<input type="text" name="last" placeholder="Фамилията ви">
