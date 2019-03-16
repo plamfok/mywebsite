@@ -7,7 +7,7 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body background= "images/wall.jpg">
+<body >
 <header>
 	<nav> 
         <div class="main-wrapper">
@@ -34,7 +34,7 @@
                         ?>
         	</div>
         </div>
-        </nav>
-        
+       
+         
                 </body>
 </header>

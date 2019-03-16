@@ -5,11 +5,11 @@ if (isset($_POST['submit'])) {
 	$last = mysqli_real_escape_string ($conn, $_POST['last']);
 	$email = mysqli_real_escape_string ($conn, $_POST['email']);
     $people = mysqli_real_escape_string($conn,$_POST['people']);
-    $dateIn = mysqli_real_escape_string($conn,$_POST['dateIn']);
-    $dateOut = mysqli_real_escape_string($conn,$_POST['dateOut']);
+    $checkin = mysqli_real_escape_string($conn,$_POST['checkin']);
+    $checkout = mysqli_real_escape_string($conn,$_POST['checkout']);
 
     //Проверка за празно поле
-    if (empty($first) || empty($last) || empty($email)|| empty($people)|| empty($dateIn)|| empty($dateOut)) {
+    if (empty($first) || empty($last) || empty($email)|| empty($people)|| empty($checkin)|| empty($checkout)) {
     	header("Location: ../reservation.php?signup=empty");
 	     exit();
     }
@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
         	     }
     	           else{
 
-                    $sql = "INSERT INTO Reservation (user_first, user_last, user_email, user_dateIn, user_dateOut,user_people) VALUES ('$first','$last','$email','$dateIn','$dateOut','$people');";
+                    $sql = "INSERT INTO reservation (user_first, user_last, user_email, user_checkin, user_checkout, user_people) VALUES ('$first','$last','$email','$checkin','$checkout','$people');";
     			mysqli_query($conn, $sql);
     			header("Location: ../reservation.php?signup=success");
     		exit();

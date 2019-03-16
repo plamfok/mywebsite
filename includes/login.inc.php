@@ -38,7 +38,7 @@ if (isset ($_POST['submit'])){
          			$_SESSION['u_email'] = $row['user_email'];
 					 $_SESSION['u_uid'] = $row['user_uid'];
 					 //Избрал съм този user да влиза в администраторската страница
-					 if ($uid === plam) {
+					 if ($uid === tanev) {
 						header("Location: ../admin.php?login=success");
 						 exit();
 					}

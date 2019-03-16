@@ -12,8 +12,8 @@
 			<input type="text" name="last" placeholder="Фамилията ви">
 			<input type="text" name="email" placeholder="E-mail">
             <input type="text" name="people" placeholder="Стая за колко души">
-			<input type="text" name="dateIn" placeholder="dd/mm/year за коя дата">
-			<input type="text" name="dateOut" placeholder="dd/mm/year до коя дата">
+			<input placeholder="Check in" name="checkin" class="textbox-n" type="text" onfocus="(this.type='date')"  id="datein"> 
+			<input placeholder="Check out" name="checkout" class="textbox-n" type="text" onfocus="(this.type='date')"  id="dateout"> 
 			<button type="submit" name="submit">Резервация</button>
         </form>
         
